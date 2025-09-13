@@ -50,3 +50,19 @@ Add Customization and expand the game:
   - Use nested conditionals and logical operators to create complex outcomes.
 
 */
+const hasSword = true;
+const hasCompass = true;
+
+if (choice === "mountains" && hasTorch && hasSword) {
+  console.log("With your torch and sword, you fend off wild animals and safely reach the mountain peak.");
+} else if (choice === "mountains" && hasTorch) {
+  console.log("You reach the mountain safely but encounter some wild animals.");
+} else if (choice === "mountains") {
+  console.log("It's too dark and dangerous without a torch. You head back.");
+} else if (choice === "village" && hasCompass) {
+  console.log("Using your compass, you find a shortcut to the village.");
+} else if (choice === "village") {
+  console.log("You walk to the village but get a little lost along the way.");
+} else {
+  console.log("You wander aimlessly and adventure fails.");
+}
